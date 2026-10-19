@@ -401,6 +401,7 @@ services:
   nats:
     image: nats:2.14.2
     ports:
+      - ${NATS_HOST:-nats}:nats
       - ${EXPOSE_NATS_PORT:-4222}:4222
       - ${EXPOSE_NATS_MONITORING_PORT:-8222}:8222
     volumes:
