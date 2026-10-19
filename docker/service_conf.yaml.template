@@ -108,7 +108,7 @@ kvrocks:
   password: '${REDIS_PASSWORD:-infini_rag_flow}'
   host: '${KVROCKS_HOST:-kvrocks}:${KVROCKS_PORT:-6379}'
 nats:
-  host: ${NATS_HOST:-0.0.0.0}
+  host: ${NATS_HOST:-nats}
   port: ${NATS_PORT:-4222}
 clickhouse:
   host: '${CLICKHOUSE_HOST:-clickhouse}'
